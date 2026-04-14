@@ -48,6 +48,32 @@ h1 span{color:var(--yellow)}
 .urgency p{font-size:13px;font-weight:700;color:#ffaa44}
 .urgency small{font-size:11px;color:var(--text-muted)}
 footer{text-align:center;padding:20px;font-size:11px;color:#555;border-top:1px solid var(--gray)}
+  .floating-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 12px 16px;
+  background: linear-gradient(to top, #111 80%, transparent);
+  text-align: center;
+}
+.floating-btn a {
+  display: block;
+  background: var(--red);
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
 </style>
 </head>
 <body>
@@ -88,5 +114,8 @@ footer{text-align:center;padding:20px;font-size:11px;color:#555;border-top:1px s
 </div>
 </div>
 <footer>Este site contém links de afiliados. Ao comprar, você apoia nosso trabalho sem custo adicional.</footer>
+  <div class="floating-btn">
+  <a href="https://meli.la/1qA7Q2d" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-18083018453/FOheCLLPtZocENXt065D', 'value': 1.0, 'currency': 'BRL'});">🛒 PEGAR OFERTA AGORA</a>
+</div>
 </body>
 </html>
